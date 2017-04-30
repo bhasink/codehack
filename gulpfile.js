@@ -8,14 +8,23 @@ elixir(function(mix){
 
         .styles([
 
+            'blog-post.css',
+            'bootstrap.css',
+            'font-awesome.css',
+            'metis-menu.css',
+            'sb-admin-2.css',
+            'styles.css',
+            'timeline.css'
 
 
-    ])
+    ],'./public/css.css')
 
         .scripts([
 
-            'app.js',
-            'bootstrap.js'
+            'jquery.js',
+            'bootstrap.js',
+            'metismenu.js',
+            'sb-admin-2.js'
 
 
         ],'./public/js.js')
