@@ -29,8 +29,8 @@
           <tr>
             <td>{{$posts->id}}</td>
             <td>{{$posts->user->name}}</td>
-            <td>{{$posts->category_id}}</td>
-              <td><img height="50" src="{{$posts->photo->file}}"></td>
+            <td>{{$posts->category ?$posts->category->name : 'Uncategorized'}}</td>
+              <td><img height="80" width="80" src="{{$posts->photo ? $posts->photo->file :'http://placehold.it/400x400'}}"></td>
               <td>{{$posts->title}}</td>
               <td>{{$posts->body}}</td>
               <td>{{$posts->created_at->diffForHumans()}}</td>
